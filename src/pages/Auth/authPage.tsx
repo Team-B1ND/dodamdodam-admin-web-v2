@@ -1,0 +1,16 @@
+import * as S from "./style";
+import AuthLogo from "@/assets/Auth_Logo.svg";
+import SignIn from "@/components/Auth/Signin";
+
+const AuthPage = () => {
+
+  return (
+    <S.Main>
+      <S.SignBox>
+        <S.Logo src={AuthLogo} alt="auth" />
+        <SignIn />
+      </S.SignBox>
+    </S.Main>
+  );
+};
+export default AuthPage;
