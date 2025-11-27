@@ -1,6 +1,7 @@
 import * as S from "./style";
 import { DodamFilledButton } from "@b1nd/dds-web";
-import person from "@/assets/person.svg?react";
+// import Person from "@/assets/person.svg?react";
+import Person from "@/assets/person.svg?react";
 
 interface MemberRowProps {
   profile?: string;
@@ -32,7 +33,7 @@ const MemberRow = ({
           <img src={profile} alt={name} />
         ) : (
           <S.ProfilePlaceholder>
-            <img src={person} alt="placeholder" />
+            <Person width={25} height={25} />
           </S.ProfilePlaceholder>
         )}
       </S.Profile>
