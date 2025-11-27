@@ -1,5 +1,5 @@
 import * as S from "./style";
-import AuthLogo from "@/assets/Auth_Logo.svg";
+import AuthLogo from "@/assets/auth_logo.svg?react";
 import SignIn from "@/components/Auth/Signin";
 
 const AuthPage = () => {

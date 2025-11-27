@@ -20,7 +20,8 @@ export const Content = styled.div`
   }
 `;
 
-export const Main = styled.div`
+export const Main = styled.div` 
+  flex: 1;
   height: 88vh;           
   margin-left: 12px;
   background-color: #ffffff;

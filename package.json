@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@b1nd/b1nd-toastify": "^2.0.1",
-    "@b1nd/dds-web": "^0.2.5",
+    "@b1nd/dds-web": "^0.2.1",
     "@emotion/is-prop-valid": "^1.4.0",
     "@react-icons/all-files": "^4.1.0",
     "axios": "^1.13.1",

@@ -12,7 +12,7 @@ importers:
         specifier: ^2.0.1
         version: 2.0.1(react-dom@18.3.1(react@18.3.1))
       '@b1nd/dds-web':
-        specifier: ^0.2.5
+        specifier: ^0.2.1
         version: 0.2.5(react-dom@18.3.1(react@18.3.1))(rollup@4.52.5)(typescript@5.9.3)
       '@emotion/is-prop-valid':
         specifier: ^1.4.0

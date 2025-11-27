@@ -1,7 +1,7 @@
 import * as s from "./style";
 import { useLocation, useNavigate } from "react-router-dom";
 import { People, Megaphone, Gear, ExclamationmarkCircle } from "@b1nd/dds-web";
-import Phone from "@/assets/Phone.svg";
+import Phone from "@/assets/phone.svg?react";
 
 export const Tabbar = () => {
   const navigate = useNavigate();
@@ -16,7 +16,6 @@ export const Tabbar = () => {
       name: "전화번호 관리",
       icon: Phone,
       path: "/phone",
-      isImage: true,
     },
     {
       id: "authority",
@@ -39,14 +38,10 @@ export const Tabbar = () => {
               $active={isActive}
               onClick={() => navigate(menu.path)}
             >
-              {menu.isImage ? (
-                <s.PhoneIcon src={menu.icon} alt="phone" $active={isActive} />
-              ) : (
-                <IconComponent
-                  size={24}
-                  color={isActive ? "#FFFFFF" : "#000000"}
-                />
-              )}
+              <IconComponent
+                size={24}
+                color={isActive ? "#FFFFFF" : "#000000"}
+              />
               <span>{menu.name}</span>
             </s.MenuButton>
           );
