@@ -1,4 +1,4 @@
-import notFound from "@/assets/404.svg";
+import notFound from "@/assets/404.svg?react";
 import * as s from "./style";
 
 const PhoneNumber = () => {

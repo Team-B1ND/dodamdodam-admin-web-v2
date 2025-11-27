@@ -1,7 +1,6 @@
 import { QueryClient, QueryClientProvider } from "react-query";
 import { DodamGlobalStyles, DodamThemeProvider, ETheme } from "@b1nd/dds-web";
 import { Router } from "./shared/Router";
-import { useThemes } from "./hooks/Theme/useThemes";
 import { B1ndToastContainer } from "@b1nd/b1nd-toastify";
 import { StyleSheetManager } from "styled-components";
 import isPropValid from "@emotion/is-prop-valid";
@@ -14,7 +13,6 @@ const queryClient = new QueryClient({
 });
 
 function App() {
-  const { themeColor } = useThemes();
   return (
     <StyleSheetManager shouldForwardProp={isPropValid}>
       <DodamThemeProvider theme={ETheme.LIGHT}>
