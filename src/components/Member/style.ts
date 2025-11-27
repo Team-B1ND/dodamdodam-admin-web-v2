@@ -12,3 +12,11 @@ export const ScrollableContent = styled.div`
   overflow-y: auto;
   overflow-x: hidden;
 `;
+
+export const ContentWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  height: 40px;
+  margin: 16px;
+`;

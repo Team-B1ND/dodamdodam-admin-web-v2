@@ -11,10 +11,10 @@ export const Row = styled.div`
 `;
 
 export const Profile = styled.div`
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
 
   img {
     width: 44px;
@@ -28,7 +28,15 @@ export const ProfilePlaceholder = styled.div`
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: gray;
+  background-color: ${({ theme }) => theme.fillNormal};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 25px;
+    height: 25px;
+  }
 `;
 
 export const Name = styled.span`

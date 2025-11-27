@@ -1,5 +1,6 @@
 import * as S from "./style";
 import { DodamFilledButton } from "@b1nd/dds-web";
+import person from "@/assets/person.svg";
 
 interface MemberRowProps {
   profile?: string;
@@ -13,7 +14,6 @@ interface MemberRowProps {
   onToggleStatus?: () => void;
 }
 
-// 일단 더미
 const MemberRow = ({
   profile,
   name,
@@ -28,8 +28,15 @@ const MemberRow = ({
   return (
     <S.Row>
       <S.Profile>
-        {profile ? <img src={profile} alt={name} /> : <S.ProfilePlaceholder />}
+        {profile ? (
+          <img src={profile} alt={name} />
+        ) : (
+          <S.ProfilePlaceholder>
+            <img src={person} alt="placeholder" />
+          </S.ProfilePlaceholder>
+        )}
       </S.Profile>
+
       <S.Name>{name}</S.Name>
       <S.ClassInfo>{`${grade}학년 ${classNum}반 ${studentNum}번`}</S.ClassInfo>
       <S.Text>{id}</S.Text>

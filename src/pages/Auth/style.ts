@@ -42,9 +42,9 @@ export const AuthOppositePartText = styled.p`
   color: ${({ theme }) => theme.labelAssistive};
   span {
   text-decoration: underline;
-        margin-left: 5px;
-        color: ${({ theme }) => theme.lineNormal};
-        cursor: pointer;
+      margin-left: 5px;
+      color: ${({ theme }) => theme.lineNormal};
+      cursor: pointer;
       }
 `
 
