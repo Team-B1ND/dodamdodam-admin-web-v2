@@ -1,6 +1,5 @@
 import * as S from "./style";
 import { DodamFilledButton } from "@b1nd/dds-web";
-// import Person from "@/assets/person.svg?react";
 import Person from "@/assets/person.svg?react";
 
 interface MemberRowProps {
